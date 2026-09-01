@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensiklopedia Kunyit - Tanaman Herbal Kaya Manfaat</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f39c12;
+            --primary-dark: #d35400;
+            --secondary: #27ae60;
+            --dark: #2c3e50;
+            --light: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* BAGIAN HEADER YANG SEKARANG PAKAI BACKGROUND GAMBAR */
+        header {
+            background: linear-gradient(rgba(211, 84, 0, 0.65), rgba(0, 0, 0, 0.55)), 
+                        url('https://img.magnific.com/foto-premium/daun-kunyit-hijau-yang-diisolasi_926199-3934188.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #bbb;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .full-width {
+                grid-column: span 2;
+            }
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card.scientific {
+            border-left-color: var(--secondary);
+        }
+
+        h2 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .scientific-name {
+            font-style: italic;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .use-case {
+            background: #fff8eb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .use-case strong {
+            color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            background: var(--dark);
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tanaman Kunyit</h1>
+        <p>Mengenal Lebih Dekat Tanaman Rempah Emas Asli Asia Tenggara</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Pengertian -->
+            <div class="card full-width">
+                <h2>🌿 Apa itu Kunyit?</h2>
+                <p><strong>Kunyit</strong> (atau <em>kunir</em>) adalah tanaman rempah-rempah dan obat asli dari wilayah Asia Tenggara yang termasuk dalam keluarga jahe-jahean. Bagian utama yang dimanfaatkan adalah rimpangnya, yang memiliki warna kuning-jingga cerah yang khas karena kandungan kurkumin yang tinggi.</p>
+            </div>
+
+            <!-- Nama Ilmiah -->
+            <div class="card scientific">
+                <h2>🧬 Identitas Ilmiah</h2>
+                <p>Dalam dunia botani, kunyit diklasifikasikan secara resmi sebagai:</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>Nama Ilmiah:</strong> <span class="scientific-name">Curcuma longa</span></li>
+                    <li><strong>Sinonim:</strong> <span class="scientific-name">Curcuma domestica</span></li>
+                    <li><strong>Famili:</strong> Zingiberaceae (Suku jahe-jahean)</li>
+                    <li><strong>Zat Aktif Utama:</strong> Kurkuminoid & Minyak Atsiri</li>
+                </ul>
+            </div>
+
+            <!-- Manfaat -->
+            <div class="card">
+                <h2>💡 Manfaat Utama</h2>
+                <ul>
+                    <li><strong>Kesehatan Lambung:</strong> Menekan asam lambung berlebih dan meredakan gejala maag.</li>
+                    <li><strong>Anti-Inflamasi:</strong> Mengurangi nyeri sendi dan radang pada tubuh.</li>
+                    <li><strong>Imunitas & Detoks:</strong> Menangkal radikal bebas dan menjaga fungsi hati.</li>
+                    <li><strong>Kecantikan:</strong> Mengatasi jerawat dan mencerahkan kulit wajah.</li>
+                </ul>
+            </div>
+
+            <!-- Contoh Penggunaan -->
+            <div class="card full-width">
+                <h2>🍽️ Contoh Penggunaan Sehari-hari</h2>
+                
+                <div class="use-case">
+                    <strong>1. Kuliner (Bumbu Masakan):</strong> Jadi bahan dasar wajib untuk pewarna alami dan penyedap soto, gulai, ayam ungkep, hingga nasi kuning.
+                </div>
+                
+                <div class="use-case">
+                    <strong>2. Jamu Tradisional:</strong> Diolah menjadi Jamu Kunyit Asam dengan tambahan asam jawa dan gula merah untuk penyegar tubuh serta pereda nyeri haid.
+                </div>
+
+                <div class="use-case">
+                    <strong>3. Teh Herbal:</strong> Irisan kunyit segar direbus dengan air hangat dan dicampur madu untuk meredakan perut kembung atau maag.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Kelompok 6 - Kelas IX-5</p>
+    </footer>
+
+</body>
+</html>
